@@ -10,7 +10,7 @@
 </head>
 <body>
     <form id="form" runat="server">
-            <h1 class="band_name">Bush Tetras</h1>        
+            <h1 class="band_name">Bush Tetras band</h1>        
             <h2 class="formtype">Share your experiance with us..!!</h2>
         <section>
             <h3>Name</h3>
@@ -87,27 +87,27 @@
                     </asp:TableRow>
                     <asp:TableRow>
                         <asp:TableCell><label>Parking</label></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton26" value="very_dissatisfied" Name="radio_parking"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton27" value="dissatisfied" Name="radio_parking"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton28" value="neutral" Name="radio_parking"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton29" value="satisfied" Name="radio_parking"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton30" value="very_satisfied" Name="radio_parking"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="parking_radiobutton_1" value="very_dissatisfied" Name="radio_parking"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="parking_radiobutton_2" value="dissatisfied" Name="radio_parking"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="parking_radiobutton_3" value="neutral" Name="radio_parking"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="parking_radiobutton_4" value="satisfied" Name="radio_parking"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="parking_radiobutton_5" value="very_satisfied" Name="radio_parking"/></asp:TableCell>
                     </asp:TableRow>
                     <asp:TableRow>
                         <asp:TableCell><label>First Aid</label></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton31" value="very_dissatisfied" Name="radio_firstaid"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton32" value="dissatisfied" Name="radio_firstaid"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton33" value="neutral" Name="radio_firstaid"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton34" value="satisfied" Name="radio_firstaid"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton35" value="very_satisfied" Name="radio_firstaid"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="firstaid_radiobutton_1" value="very_dissatisfied" Name="radio_firstaid"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="firstaid_radiobutton_2" value="dissatisfied" Name="radio_firstaid"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="firstaid_radiobutton_3" value="neutral" Name="radio_firstaid"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="firstaid_radiobutton_4" value="satisfied" Name="radio_firstaid"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="firstaid_radiobutton_5" value="very_satisfied" Name="radio_firstaid"/></asp:TableCell>
                     </asp:TableRow>
                     <asp:TableRow>
                         <asp:TableCell><label>Overall Event</label></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton36" value="very_dissatisfied" Name="radio_overallevent"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton37" value="dissatisfied" Name="radio_overallevent"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton38" value="neutral" Name="radio_overallevent"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton39" value="satisfied" Name="radio_overallevent"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="RadioButton40" value="very_satisfied" Name="radio_overallevent"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="overallevent_radiobutton_1" value="very_dissatisfied" Name="radio_overallevent"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="overallevent_radiobutton_2" value="dissatisfied" Name="radio_overallevent"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="overallevent_radiobutton_3" value="neutral" Name="radio_overallevent"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="overallevent_radiobutton_4" value="satisfied" Name="radio_overallevent"/></asp:TableCell>
+                        <asp:TableCell><asp:RadioButton runat="server" ID="overallevent_radiobutton_5" value="very_satisfied" Name="radio_overallevent"/></asp:TableCell>
                     </asp:TableRow>
                 </asp:Table>
         </section>
