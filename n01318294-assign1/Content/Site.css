@@ -1,0 +1,12 @@
+﻿body{
+    background-color:beige;
+}
+table{
+    border-collapse: collapse;
+}
+th,td{
+    border:1px solid;
+}
+tbody{
+    text-align:center;
+}
