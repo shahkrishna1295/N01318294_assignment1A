@@ -33,80 +33,30 @@
             </select>
         </section>
         <section>
+            <h3>How satisfactory our services was?</h3>
             <div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Services</th>
-                            <th>Very Dissatisfied</th>
-                            <th>Dissatisfied</th>
-                            <th>Neutral</th>
-                            <th>Satisfied</th>
-                            <th>Very Satisfied</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><label>Date</label></td>
-                            <td><input type="radio" id="date_radiobutton_1" name="date_radiobutton" value="very_dissatisfied" /></td>
-                            <td><input type="radio" id="date_radiobutton_2" name="date_radiobutton" value="dissatisfied" /></td>
-                            <td><input type="radio" id="date_radiobutton_3" name="date_radiobutton" value="neutral" /></td>
-                            <td><input type="radio" id="date_radiobutton_4" name="date_radiobutton" value="satisfied" /></td>
-                            <td><input type="radio" id="date_radiobutton_5" name="date_radiobutton" value="very_satisfied" /></td>
-
-                        </tr>
-                        <tr>
-                            <td><label>Location</label></td>
-                            <td><input type="radio" id="location_radiobutton_1" name="location_radiobutton" value="very_dissatisfied" /></td>
-                            <td><input type="radio" id="location_radiobutton_2" name="location_radiobutton" value="dissatisfied" /></td>
-                            <td><input type="radio" id="location_radiobutton_3" name="location_radiobutton" value="neutral" /></td>
-                            <td><input type="radio" id="location_radiobutton_4" name="location_radiobutton" value="satisfied" /></td>
-                            <td><input type="radio" id="location_radiobutton_5" name="location_radiobutton" value="very_satisfied" /></td>
-
-                        </tr>
-                        <tr>
-                            <td><label>Band Performance</label></td>
-                            <td><input type="radio" id="bandperformance_radiobutton_1" name="bandperformance_radiobutton" value="very_dissatisfied" /></td>
-                            <td><input type="radio" id="bandperformance_radiobutton_2" name="bandperformance_radiobutton" value="dissatisfied" /></td>
-                            <td><input type="radio" id="bandperformance_radiobutton_3" name="bandperformance_radiobutton" value="neutral" /></td>
-                            <td><input type="radio" id="bandperformance_radiobutton_4" name="bandperformance_radiobutton" value="satisfied" /></td>
-                            <td><input type="radio" id="bandperformance_radiobutton_5" name="bandperformance_radiobutton" value="very_satisfied" /></td>
-                        </tr>
-                        <tr>
-                            <td><label>Food and drinks</label></td>
-                            <td><input type="radio" id="fooddrink_radiobutton_1" name="fooddrink_radiobutton" value="very_dissatisfied" /></td>
-                            <td><input type="radio" id="fooddrink_radiobutton_2" name="fooddrink_radiobutton" value="dissatisfied" /></td>
-                            <td><input type="radio" id="fooddrink_radiobutton_3" name="fooddrink_radiobutton" value="neutral" /></td>
-                            <td><input type="radio" id="fooddrink_radiobutton_4" name="fooddrink_radiobutton" value="satisfied" /></td>
-                            <td><input type="radio" id="fooddrink_radiobutton_5" name="fooddrink_radiobutton" value="very_satisfied" /></td>
-                        </tr>
-                        <tr>
-                            <td><label>Help Desk</label></td>
-                            <td><input type="radio" id="helpdesk_radiobutton_1" name="helpdesk_radiobutton" value="very_dissatisfied" /></td>
-                            <td><input type="radio" id="helpdesk_radiobutton_2" name="helpdesk_radiobutton" value="dissatisfied" /></td>
-                            <td><input type="radio" id="helpdesk_radiobutton_3" name="helpdesk_radiobutton" value="neutral" /></td>
-                            <td><input type="radio" id="helpdesk_radiobutton_4" name="helpdesk_radiobutton" value="satisfied" /></td>
-                            <td><input type="radio" id="helpdesk_radiobutton_5" name="helpdesk_radiobutton" value="very_satisfied" /></td>
-                        </tr>
-                        <tr>
-                            <td><label>Parking</label></td>
-                            <td><input type="radio" id="parking_radiobutton_1" name="parking_radiobutton" value="very_dissatisfied" /></td>
-                            <td><input type="radio" id="parking_radiobutton_2" name="parking_radiobutton" value="dissatisfied" /></td>
-                            <td><input type="radio" id="parking_radiobutton_3" name="parking_radiobutton" value="neutral" /></td>
-                            <td><input type="radio" id="parking_radiobutton_4" name="parking_radiobutton" value="satisfied" /></td>
-                            <td><input type="radio" id="parking_radiobutton_5" name="parking_radiobutton" value="very_satisfied" /></td>
-                        </tr>
-
-                        <tr>
-                            <td><label>Overall Event</label></td>
-                            <td><input type="radio" id="overall_radiobutton_1" name="overall_radiobutton" value="very_dissatisfied" /></td>
-                            <td><input type="radio" id="overall_radiobutton_2" name="overall_radiobutton" value="dissatisfied" /></td>
-                            <td><input type="radio" id="overall_radiobutton_3" name="overall_radiobutton" value="neutral" /></td>
-                            <td><input type="radio" id="overall_radiobutton_4" name="overall_radiobutton" value="satisfied" /></td>
-                            <td><input type="radio" id="overall_radiobutton_5" name="overall_radiobutton" value="very_satisfied" /></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h4>Band Performance</h4>
+                <input type="radio" id="review_bad" name="review_bandperformance" value="Bad" /><label for="review_bad">Bad</label>
+                <input type="radio" id="review_good" name="review_bandperformance" value="Good" /><label for="review_good">Good</label>
+                <input type="radio" id="review_excellent" name="review_bandperformance" value="Excellent" /><label for="review_excellent">Excellent</label>
+            </div>
+            <div>
+                <h4>Food and Drinks</h4>
+                <input type="radio" id="review_bad" name="review_foodanddrinks" value="Bad" /><label for="review_bad">Bad</label>
+                <input type="radio" id="review_good" name="review_foodanddrinks" value="Good" /><label for="review_good">Good</label>
+                <input type="radio" id="review_excellent" name="review_foodanddrinks" value="Excellent" /><label for="review_excellent">Excellent</label>
+            </div>
+            <div>
+                <h4>Help Desk</h4>
+                <input type="radio" id="review_bad" name="review_helpdesk" value="Bad" /><label for="review_bad">Bad</label>
+                <input type="radio" id="review_good" name="review_helpdesk" value="Good" /><label for="review_good">Good</label>
+                <input type="radio" id="review_excellent" name="review_helpdesk" value="Excellent" /><label for="review_excellent">Excellent</label>
+            </div>
+            <div>
+                <h4>Parking</h4>
+                <input type="radio" id="review_bad" name="review_parking" value="Bad" /><label for="review_bad">Bad</label>
+                <input type="radio" id="review_good" name="review_parking" value="Good" /><label for="review_good">Good</label>
+                <input type="radio" id="review_excellent" name="review_parking" value="Excellent" /><label for="review_excellent">Excellent</label>
             </div>
         </section>
         <section>

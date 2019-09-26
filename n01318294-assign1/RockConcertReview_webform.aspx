@@ -7,6 +7,7 @@
     <meta charset="utf-8" />
     <title>Rock Concert Review</title>
     <link rel="stylesheet" type="text/css" href="Content/Site.css" />
+
 </head>
 <body>
     <form id="form" runat="server">
@@ -15,10 +16,12 @@
         <section>
             <h3>Name</h3>
             <asp:TextBox runat="server" ID="user_name" Placeholder="Jhon"></asp:TextBox>
+            <asp:RangeValidator runat="server" ErrorMessage="Please Enter Your Name..!!" ControlToValidate="user_name"></asp:RangeValidator>
         </section>
         <section>
             <h3>Email Address</h3>
             <asp:TextBox runat="server" ID="user_email" Placeholder="me@example.com"></asp:TextBox>
+            <asp:RangeValidator runat="server" ErrorMessage="Please enter valid email" ControlToValidate="user_email"></asp:RangeValidator>
         </section>
         <section>
             <h3>Age</h3>
@@ -27,6 +30,7 @@
         <section>
             <h3>How did you hear about the Bush Tetras Concert?</h3>
             <asp:DropDownList runat="server" ID="information_recieved_option">
+                <asp:ListItem Text="-- Choose One --" Value=""></asp:ListItem>
                 <asp:ListItem Text="Internet" Value="internet"></asp:ListItem>
                 <asp:ListItem Text="Friend" Value="friend"></asp:ListItem>
                 <asp:ListItem Text="Flyer" Value="flyer"></asp:ListItem>
@@ -36,73 +40,30 @@
             </asp:DropDownList>
         </section>
         <section>
+            <h3>How satisfactory our services was?</h3>
             <div>
-                <asp:Table runat="server">
-                    <asp:TableHeaderRow>
-                        <asp:TableHeaderCell>Services</asp:TableHeaderCell>
-                        <asp:TableHeaderCell>Very Dissatisfied</asp:TableHeaderCell>
-                        <asp:TableHeaderCell>Dissatisfied</asp:TableHeaderCell>
-                        <asp:TableHeaderCell>Neutral</asp:TableHeaderCell>
-                        <asp:TableHeaderCell>Satisfied</asp:TableHeaderCell>
-                        <asp:TableHeaderCell>Very Satisfied</asp:TableHeaderCell>
-                    </asp:TableHeaderRow>
-                    <asp:TableRow>
-                        <asp:TableCell><label>Date</label></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="date_radiobutton_1" GroupName="rdobtn_date"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="date_radiobutton_2" GroupName="rdobtn_date" /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="date_radiobutton_3" GroupName="rdobtn_date" /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="date_radiobutton_4" GroupName="rdobtn_date"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="date_radiobutton_5" GroupName="rdobtn_date"/></asp:TableCell>
-                    </asp:TableRow>
-                    <asp:TableRow>
-                        <asp:TableCell><label>Location</label></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="location_radiobutton_1" GroupName="rdobtn_location"   /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="location_radiobutton_2" GroupName="rdobtn_location"   /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="location_radiobutton_3" GroupName="rdobtn_location"   /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="location_radiobutton_4" GroupName="rdobtn_location"   /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="location_radiobutton_5" GroupName="rdobtn_location"   /></asp:TableCell>
-                    </asp:TableRow>
-                    <asp:TableRow>
-                        <asp:TableCell><label>Band Performance</label></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="bandperformance_radiobutton_1" GroupName="rdobtn_bndperformance"   /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="bandperformance_radiobutton_2" GroupName="rdobtn_bndperformance"   /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="bandperformance_radiobutton_3" GroupName="rdobtn_bndperformance"   /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="bandperformance_radiobutton_4" GroupName="rdobtn_bndperformance"   /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="bandperformance_radiobutton_5" GroupName="rdobtn_bndperformance"   /></asp:TableCell>
-                    </asp:TableRow>
-                    <asp:TableRow>
-                        <asp:TableCell><label>Food and Drinks</label></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="fooddrink_radiobutton_1"    GroupName="rdobtn_fooddrink"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="fooddrink_radiobutton_2"    GroupName="rdobtn_fooddrink"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="fooddrink_radiobutton_3"    GroupName="rdobtn_fooddrink"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="fooddrink_radiobutton_4"    GroupName="rdobtn_fooddrink"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="fooddrink_radiobutton_5"    GroupName="rdobtn_fooddrink"/></asp:TableCell>
-                    </asp:TableRow>
-                    <asp:TableRow>
-                        <asp:TableCell><label>Help Desk</label></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="helpdesk_radiobutton_1"   GroupName="rdobtn_helpdesk"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="helpdesk_radiobutton_2"   GroupName="rdobtn_helpdesk"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="helpdesk_radiobutton_3"   GroupName="rdobtn_helpdesk"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="helpdesk_radiobutton_4"   GroupName="rdobtn_helpdesk"/></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="helpdesk_radiobutton_5"   GroupName="rdobtn_helpdesk"/></asp:TableCell>
-                    </asp:TableRow>
-                    <asp:TableRow>
-                        <asp:TableCell><label>Parking</label></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="parking_radiobutton_1"  GroupName="rdobtn_parking"  /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="parking_radiobutton_2"  GroupName="rdobtn_parking"  /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="parking_radiobutton_3"  GroupName="rdobtn_parking"  /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="parking_radiobutton_4"  GroupName="rdobtn_parking"  /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="parking_radiobutton_5"  GroupName="rdobtn_parking"  /></asp:TableCell>
-                    </asp:TableRow>
-                    <asp:TableRow>
-                        <asp:TableCell><label>Overall Event</label></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="overallevent_radiobutton_1" GroupName="rdobtn_overallevent"  /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="overallevent_radiobutton_2" GroupName="rdobtn_overallevent"   /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="overallevent_radiobutton_3" GroupName="rdobtn_overallevent"  /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="overallevent_radiobutton_4" GroupName="rdobtn_overallevent"  /></asp:TableCell>
-                        <asp:TableCell><asp:RadioButton runat="server" ID="overallevent_radiobutton_5" GroupName="rdobtn_overallevent"   /></asp:TableCell>
-                    </asp:TableRow>
-                </asp:Table>
+                <h4>Band Performance</h4>
+                <asp:RadioButton runat="server" Text="Good" />
+                <asp:RadioButton runat="server" Text="Bad" />
+                <asp:RadioButton runat="server" Text="Excellent" />
+            </div>
+            <div>
+                <h4>Food and Drinks</h4>
+                <asp:RadioButton runat="server" Text="Good"/>
+                <asp:RadioButton runat="server" Text="Bad" />
+                <asp:RadioButton runat="server" Text="Excellent" />
+            </div>
+            <div>
+                <h4>Help Desk</h4>
+                <asp:RadioButton runat="server" Text="Good"/>
+                <asp:RadioButton runat="server" Text="Bad" />
+                <asp:RadioButton runat="server" Text="Excellent" />
+            </div>
+            <div>
+                <h4>Parking</h4>
+                <asp:RadioButton runat="server" Text="Good"/>
+                <asp:RadioButton runat="server" Text="Bad" />
+                <asp:RadioButton runat="server" Text="Excellent" />
             </div>
         </section>
         <section>
