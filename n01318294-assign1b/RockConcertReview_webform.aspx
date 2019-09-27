@@ -23,6 +23,7 @@
             <h3>Email Address</h3>
             <asp:TextBox runat="server" ID="customer_email" Placeholder="me@example.com"></asp:TextBox>
             <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ControlToValidate="customer_email" ErrorMessage="Please enter your email."></asp:RequiredFieldValidator>            
+            <%/*Reference for the email expression : (The Official Forums for Microsoft ASP.NET, 2019)*/ %>
             <asp:RegularExpressionValidator runat="server" ValidationExpression="^[\w-\.]{1,}\@([\da-zA-Z-]{1,}\.){1,}[\da-zA-Z-]{2,6}$" ErrorMessage="Please enter valid email" ControlToValidate="customer_email" EnableClientScript="true"></asp:RegularExpressionValidator>
         </section>
         <section>
