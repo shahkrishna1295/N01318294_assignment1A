@@ -22,13 +22,13 @@
         <section>
             <h3>Email Address</h3>
             <asp:TextBox runat="server" ID="customer_email" Placeholder="me@example.com"></asp:TextBox>
-            <asp:RequiredFieldValidator runat="server" ErrorMessage="Please enter your email address." ControlToValidate="customer_email" EnableClientScript="true" ></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ControlToValidate="customer_email" ErrorMessage="Please enter your email."></asp:RequiredFieldValidator>            
             <asp:RegularExpressionValidator runat="server" ValidationExpression="^[\w-\.]{1,}\@([\da-zA-Z-]{1,}\.){1,}[\da-zA-Z-]{2,6}$" ErrorMessage="Please enter valid email" ControlToValidate="customer_email" EnableClientScript="true"></asp:RegularExpressionValidator>
         </section>
         <section>
             <h3>Age</h3>
-            <asp:TextBox runat="server" ID="customer_age" Placeholder="20"></asp:TextBox>
-            <asp:RangeValidator runat="server" ControlToValidate="customer_age" ErrorMessage="Please enter valid age." EnableClientScript="true" MinimumValue="14" MaximumValue="90"></asp:RangeValidator>
+            <asp:TextBox runat="server" ID="customer_age" Placeholder="from 15 to 70"></asp:TextBox>            
+            <asp:RangeValidator runat="server" Type="Integer" ControlToValidate="customer_age" ErrorMessage="Please enter valid age." MinimumValue="10" MaximumValue="70"></asp:RangeValidator>
             <asp:RequiredFieldValidator runat="server" ControlToValidate="customer_age" ErrorMessage="Please enter your age." EnableClientScript="true"></asp:RequiredFieldValidator>
         </section>
         <section>
@@ -54,7 +54,7 @@
                     <asp:ListItem Text="Good" Value="good" ></asp:ListItem>
                     <asp:ListItem Text="Excellent" Value="excellent"></asp:ListItem>
                 </asp:RadioButtonList>
-                <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ControlToValidate="bandperformance_review" ErrorMessage="Please select an option"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ControlToValidate="bandperformance_review" ErrorMessage="Please select review for band performnace"></asp:RequiredFieldValidator>
             </div>
             <div>
                 <h4>Food and Drinks</h4>
@@ -90,7 +90,7 @@
                     <asp:ListItem Text="Good" Value="good" ></asp:ListItem>
                     <asp:ListItem Text="Excellent" Value="excellent"></asp:ListItem>
                 </asp:RadioButtonList>
-                <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ControlToValidate="overall_review" ErrorMessage="Please select an option"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ControlToValidate="overall_review" ErrorMessage="Please select an option for overall review"></asp:RequiredFieldValidator>
             </div>
         </section>
         <section>
