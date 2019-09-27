@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Rock Concert Review</title>
+    <link rel="stylesheet" type="text/css" href="Content/Site.css" />
+</head>
+<body>
+    <form method="post" action="http://sandbox.bittsdevelopment.com/humber/httpdebug/acceptdata.php" id="form">
+        <h1>Bush Tetras band</h1>
+        <h2>Share your experiance with us..!!</h2>
+        <section>
+            <h3>Name</h3>
+            <input type="text" id="customer_name" name="customer_name" placeholder="Jhon" />
+        </section>
+        <section>
+            <h3>Email Adress</h3>
+            <input type="email" id="customer_email" name="customer_email" placeholder="me@example.com" />
+        </section>
+        <section>
+            <h3>Age</h3>
+            <input type="number" id="customer_age" name="customer_age" placeholder="20" />
+        </section>
+        <section>
+            <h3>How did you hear about the Bush Tetras Concert?</h3>
+            <select id="information_recieved_option">
+                <option value="internet">Internet</option>
+                <option value="friend">Friend</option>
+                <option value="flyer">Flyer</option>
+                <option value="newspaper">Newspaper</option>
+                <option value="radio">Radio</option>
+                <option value="poster">Posters</option>
+            </select>
+        </section>
+        <section>
+            <h3>How satisfactory our services was?</h3>
+            <div>
+                <h4>Band Performance</h4>
+                <input type="radio" id="review_bad" name="review_bandperformance" value="Bad" /><label for="review_bad">Bad</label>
+                <input type="radio" id="review_good" name="review_bandperformance" value="Good" /><label for="review_good">Good</label>
+                <input type="radio" id="review_excellent" name="review_bandperformance" value="Excellent" /><label for="review_excellent">Excellent</label>
+            </div>
+            <div>
+                <h4>Food and Drinks</h4>
+                <input type="radio" id="review_bad" name="review_foodanddrinks" value="Bad" /><label for="review_bad">Bad</label>
+                <input type="radio" id="review_good" name="review_foodanddrinks" value="Good" /><label for="review_good">Good</label>
+                <input type="radio" id="review_excellent" name="review_foodanddrinks" value="Excellent" /><label for="review_excellent">Excellent</label>
+            </div>
+            <div>
+                <h4>Help Desk</h4>
+                <input type="radio" id="review_bad" name="review_helpdesk" value="Bad" /><label for="review_bad">Bad</label>
+                <input type="radio" id="review_good" name="review_helpdesk" value="Good" /><label for="review_good">Good</label>
+                <input type="radio" id="review_excellent" name="review_helpdesk" value="Excellent" /><label for="review_excellent">Excellent</label>
+            </div>
+            <div>
+                <h4>Parking</h4>
+                <input type="radio" id="review_bad" name="review_parking" value="Bad" /><label for="review_bad">Bad</label>
+                <input type="radio" id="review_good" name="review_parking" value="Good" /><label for="review_good">Good</label>
+                <input type="radio" id="review_excellent" name="review_parking" value="Excellent" /><label for="review_excellent">Excellent</label>
+            </div>
+            <div>
+                <h4>Overall Concert</h4>
+                <input type="radio" id="review_bad" name="review_overall" value="Bad" /><label for="review_bad">Bad</label>
+                <input type="radio" id="review_good" name="review_overall" value="Good" /><label for="review_good">Good</label>
+                <input type="radio" id="review_excellent" name="review_overall" value="Excellent" /><label for="review_excellent">Excellent</label>
+            </div>
+        </section>
+        <section>
+            <h3>What fascinated you the most in the Concert?</h3>
+            <input type="text" id="most_liked_thing" name="most_liked_thing" placeholder="props" />
+        </section>
+        <section>
+            <h3>What did you like the least about the Concert?</h3>
+            <input type="text" id="least_liked_thing" name="least_liked_thing" placeholder="entrance" />
+        </section>
+        <section>
+            <div>
+                <h3>Other Suggestions</h3>
+            </div>
+            <div>
+                <textarea id="suggestion_box"></textarea>
+            </div>
+        </section>
+        <section>
+            <input type="checkbox" id="publish_permission_checkbox" name="publish_permission_checkbox" value="publish_permission" />
+            <label for="publish_permission_checkbox">I am ok if you publish my feedback on the website or other promotional activities.</label>
+        </section>
+        <section>
+            <input type="checkbox" id="subscribe_news_checkbox" name="subscribe_news_checkbox" value="newsletter">
+            <label for="subscribe_news_checkbox">Subscribe to newsletter.</label>
+        </section>
+        <section>
+            <input type="submit" value="Submit">
+        </section>
+    </form>
+</body>
+</html>
